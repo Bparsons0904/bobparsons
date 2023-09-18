@@ -36,8 +36,91 @@
 			image="images/how-we-work.svg"
 			alt="Illistration of a team of developers"
 			title="How We Work"
-			text="Collaboration is at the core of our approach. We immerse ourselves in understanding your unique needs, ensuring that our solutions are not only effective but also budget-friendly. Together, we'll co-create a strategy that outlines clear timelines and milestones, providing a transparent roadmap tailored to your goals. Moreover, we offer flexible billing options: whether you prefer hourly rates or task-based pricing, we're here to accommodate your financial preferences."
+			text="Your goals drive our approach. We engage closely with you, diving deep into your requirements. This collaboration ensures our solutions are effective and align with your budget. With a transparent strategy, we lay out timelines and milestones. And when it comes to billing, we offer both hourly rates or task-based pricing, tailoring to what suits your project best."
 		/>
+	</div>
+</section>
+
+<section class="different">
+	<div class="side-image-wrapper">
+		<img src="images/side-panel-image.png" alt="Documents feeding into a computer" />
+	</div>
+	<div class="content">
+		<h1>A Different Experience</h1>
+		<p>
+			We're not just another development agency; we're a collective brought together by more than
+			just our renowned skills and high-performance code. It's our genuine love for software
+			development that binds us. This deep-rooted passion shines through in the resilient,
+			efficient, and top-tier quality of our work. Beyond just writing code, our expertise spans a
+			multitude of products, languages, and frameworks. Plus, we don't stop at development: we're
+			with you every step of the way, offering comprehensive solutions including hosting,
+			maintenance, and deployment, ensuring your software's seamless journey from conception to
+			going live.
+		</p>
+		<div class="stack-list">
+			<div class="inner-stack-list">
+				<span>React</span>
+				<span>PostgreSQL</span>
+				<span>SCSS</span>
+				<span>Flutter</span>
+				<span>Laravel</span>
+				<span>MongoDB</span>
+				<span>Next</span>
+				<span>Django</span>
+				<span>Git</span>
+				<span>Bootstrap</span>
+				<span>Dart</span>
+				<span>Vue</span>
+				<span>TypeScript</span>
+				<span>Tailwind CSS</span>
+				<span>Redis</span>
+				<span>GraphQL</span>
+				<span>Python</span>
+				<span>FastAPI</span>
+				<span>JavaScript</span>
+				<span>Go Lang</span>
+				<span>Ruby on Rails</span>
+				<span>Next.js</span>
+				<span>Svelte</span>
+				<span>DynamoDB</span>
+				<span>Angular</span>
+				<span>Express</span>
+				<span>CSS</span>
+				<span>C#</span>
+				<span>Node</span>
+				<span>HTML</span>
+				<span>Material UI</span>
+				<span>PHP</span>
+				<span>SQLite</span>
+				<span>Nuxt.js</span>
+				<span>MySQL</span>
+				<span>Flask</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="dont-do">
+	<div class="content">
+		<h1>What We Stand For (and What We Don't)</h1>
+		<p>
+			We're not just any development agency. We don't believe in one-size-fits-all solutions, nor in
+			selling pre-packaged software that misses the mark. Cutting corners, compromising on quality,
+			and overpromising only to underdeliver? That's not us.
+		</p>
+		<p>
+			We're also not a marketing or design agency. We're specialists, and our expertise is in
+			software development.
+		</p>
+		<p>
+			What we do believe in is partnership. We're here to be your steadfast ally in the world of
+			software, to truly understand your needs, and to provide solutions tailored to your vision,
+			budget, and timeline. With us, it's personal. You're not just another client; you're a
+			teammate.
+		</p>
+	</div>
+	<div class="side-image-wrapper">
+		<img src="images/side-image.svg" alt="Documents feeding into a computer" />
 	</div>
 </section>
 
@@ -107,6 +190,90 @@
 
 		@media (max-width: 768px) {
 			grid-template-columns: 1fr;
+		}
+	}
+
+	.different {
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		padding: 2rem;
+		color: var(--color-text-light);
+		.side-image-wrapper {
+			width: auto;
+			height: 300px;
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		.content {
+			font-size: 1.2rem;
+			line-height: 1.35;
+			letter-spacing: 0.5px;
+			overflow: hidden;
+			.stack-list {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+
+				.inner-stack-list {
+					display: flex;
+					white-space: nowrap;
+					animation: scroll 60s linear infinite;
+
+					span {
+						padding: 0 1.5em;
+						border-right: 1px solid var(--color-primary);
+					}
+				}
+			}
+		}
+	}
+
+	.dont-do {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		padding: 2rem;
+		background-color: var(--color-secondary-dark);
+		color: var(--color-text-light);
+		.side-image-wrapper {
+			width: auto;
+			height: 300px;
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		.content {
+			font-size: 1.2rem;
+			line-height: 1.35;
+			letter-spacing: 0.5px;
+			overflow: hidden;
+		}
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(100%);
+		}
+		100% {
+			transform: translateX(-100%);
 		}
 	}
 </style>
