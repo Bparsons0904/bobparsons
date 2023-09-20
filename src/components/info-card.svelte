@@ -17,12 +17,12 @@
 
 <style lang="scss">
 	.card {
-		padding: 1rem;
+		padding: 2rem;
 		background-color: #030a1a;
 		display: flex;
 		flex-direction: column;
-		height: 100%; // take full height within grid cell
-		gap: 1rem;
+		height: 100%;
+		gap: 2rem;
 
 		.img-wrapper {
 			width: 250px;
@@ -42,17 +42,17 @@
 			flex: 1;
 			display: flex;
 			flex-direction: column;
-			justify-content: flex-start; // ensures content starts from the top
-			margin-bottom: -25px;
+			justify-content: flex-start;
+			margin-bottom: -70px;
 			h1 {
-				margin-bottom: 1rem; // space between title and paragraph
+				margin-bottom: 1rem;
 			}
 
 			p {
 				font-size: 1.2rem;
 				line-height: 1.35;
 				letter-spacing: 0.5px;
-				margin: 0; // remove default margin
+				margin: 0; // remove default margi
 			}
 		}
 	}

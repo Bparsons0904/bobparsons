@@ -8,7 +8,7 @@
 			<div class="intro-image-overlay" />
 		</div>
 		<div class="intro-image-content">
-			<h1 class="intro-image-title">US Based Software Developers</h1>
+			<h1 class="intro-image-title">Software Development Experts</h1>
 			<p class="intro-image-subtitle">Your Source for On Demand Software Solutions</p>
 			<div class="button">
 				<a href="/contact">
@@ -124,6 +124,13 @@
 	</div>
 </section>
 
+<section class="contact">
+	<a href="/contact"><button class="btn btn-cta">Contact Us</button></a>
+	<a href="/about">
+		<button class="btn btn-cta">Our Work</button>
+	</a>
+</section>
+
 <style lang="scss" scoped>
 	.intro-image-wrapper {
 		width: 100%;
@@ -185,7 +192,7 @@
 		grid-template-columns: repeat(3, 1fr);
 		align-items: stretch; // ensuring all cards stretch to the tallest card's height
 		justify-content: center;
-		gap: 2rem;
+		gap: 4rem;
 		padding: 2rem;
 
 		@media (max-width: 768px) {
@@ -194,6 +201,7 @@
 	}
 
 	.different {
+		margin: 4rem 0;
 		display: grid;
 		grid-template-columns: 2fr 3fr;
 		align-items: center;
@@ -266,6 +274,12 @@
 			letter-spacing: 0.5px;
 			overflow: hidden;
 		}
+	}
+
+	.contact {
+		padding: 2rem;
+		display: flex;
+		justify-content: space-evenly;
 	}
 
 	@keyframes scroll {

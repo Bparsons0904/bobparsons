@@ -8,6 +8,7 @@
 <style lang="scss">
 	:global(body) {
 		background-color: #000;
+		margin: 0;
 	}
 
 	// Set root color variables
@@ -21,8 +22,11 @@
 
 	:global(.btn) {
 		padding: 1.5rem;
-		border: 3px solid var(--color-primary);
+		// border: 3px solid var(--color-primary);
 		border-radius: 25px;
+		cursor: pointer;
+		outline: none;
+		border: none;
 	}
 
 	:global(.btn-primary) {
@@ -35,5 +39,20 @@
 	:global(.btn-primary:hover) {
 		background-color: var(--color-primary);
 		color: var(--color-text-dark);
+	}
+
+	:global(.btn-cta) {
+		font-size: 1.5rem;
+		width: 200px;
+		background-color: var(--color-primary);
+		// border-color: var(--color-secondary-light);
+		color: var(--color-text-dark);
+		transition: all 0.3s ease-in-out;
+		font-weight: 600;
+	}
+
+	:global(.btn-cta:hover) {
+		background-color: var(--color-secondary-dark);
+		color: var(--color-text-light);
 	}
 </style>
